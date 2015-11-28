@@ -123,18 +123,6 @@ Home &#9662;
 
 </form>
 
-<hr>
-
-<form method="post" action="/index"  id="db_post" name="db_view">
-
-    {{ form2.hidden_tag() }}
-
-    {{ macros.render_field(form2.numRetrieve, placeholder='Retrieve last N DB entries (enter 1-9)', type='numRetrieve', label_visible=false) }}
-
-    <div align="center"><button type="submit" class="btn btn-primary">Retrieve</button></p></div>
-
-</form>
-
 </div>
 
 {% endblock %}
