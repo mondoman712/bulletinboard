@@ -513,11 +513,12 @@ height: 15px;
 }
 #space3 {
     width: 100%;
-	height: 8px;
+	height: 4px;
     margin-right:auto;
     margin-left:auto;
-    background: grey;
-  
+    background: #8c8c8c;
+ 	border-top: solid #999999 2px; 
+ 	border-bottom: solid #999999 2px;  
 
 }
 
