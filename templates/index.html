@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-      <link type="text/css" rel="stylesheet" href="styleSheet.css"/>
-         
-      <title>Bulletin Board</title> 
+    <head>
+      <link type="text/css" rel="stylesheet" href={{ url_for('static', filename='styleSheet.css') }}/>
+
+      <title>Bulletin Board</title>
 	  <!--<link rel="shortcut icon" href="favicon1.ico" />-->
 	<script>
  function showTable() {
      if (document.getElementById("subHeading6").className == "divMe" ) {
-	     document.getElementById("subHeading6").className = "tableDisplay";	
+	     document.getElementById("subHeading6").className = "tableDisplay";
    } else {
          document.getElementById("subHeading6").className = "divMe";
         }
 }
  function hideTable() {
-      if (document.getElementById("subHeading6").className == "tableDisplay") { 
+      if (document.getElementById("subHeading6").className == "tableDisplay") {
 		document.getElementById("subHeading6").className = "divMe";
     }
 }
@@ -24,7 +24,7 @@ document.onclick = function(ht){
     }
 };
 
-</script>	  
+</script>
 </head>
 <body>
 
@@ -63,9 +63,9 @@ Hottest
 Home &#9662;
         <ul id="table">
 			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Profile</li>
-			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Settings</li>     
-			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Help</li>     
-			<li onclick="location.href='logOut.php';">&nbsp;&nbsp;Log out</li>     
+			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Settings</li>
+			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Help</li>
+			<li onclick="location.href='logOut.php';">&nbsp;&nbsp;Log out</li>
 	    </ul>
 </div>
 
@@ -92,42 +92,70 @@ Home &#9662;
 
 </div>
 
-{% extends "base.html" %} {% import 'macros.html' as macros %} 
+{% extends "base.html" %} {% import 'macros.html' as macros %}
 {% block content %}
+
+
+<div class="col-md-4 col-md-offset-4">
+
+      <div align="center">
+        <h2>10 most recent entries to your AWS RDS:</h2>
+      </div>
+
+<hr>
+
+    <table class="table table-striped table-hover">
+  <thead>
+{% for z in results %}
+    <tr>
+      <td>{{z.notes}}</td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+
+
+<hr>
+
+<div align="center"
+    <p><a href="/"><button type="submit" class="btn btn-primary">Return home</button></p></a>
+</div>
+
 
 <div class="col-md-4 col-md-offset-4">
 
       <div align="center">
         <h2>Flask-AWS Tutorial</h2>
+        <p></p>
       </div>
 
 <hr>
 
 <form method="post" action="/index"  id="db_post" name="db_post">
 
-    {{ form1.hidden_tag() }} 
-    
+    {{ form1.hidden_tag() }}
+
     {{ macros.render_field(form1.dbNotes, placeholder='Enter text to submit to the DB', type='dbNotes', label_visible=false) }}
-    
+
     <div align="center"><button type="submit" class="btn btn-primary">Submit</button></p></div>
 
-</form>   
+</form>
 
 <hr>
 
 <form method="post" action="/index"  id="db_post" name="db_view">
 
-    {{ form2.hidden_tag() }} 
-    
+    {{ form2.hidden_tag() }}
+
     {{ macros.render_field(form2.numRetrieve, placeholder='Retrieve last N DB entries (enter 1-9)', type='numRetrieve', label_visible=false) }}
-    
+
     <div align="center"><button type="submit" class="btn btn-primary">Retrieve</button></p></div>
 
-</form>   
+</form>
 
 </div>
 
-{% endblock %}  
+{% endblock %}
 
 
 
