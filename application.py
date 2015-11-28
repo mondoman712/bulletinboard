@@ -24,7 +24,7 @@ def index():
         except:
             db.session.rollback()
         return render_template('thanks.html', notes=form1.dbNotes.data,
-                data=data_entered)
+               data=data_entered)
 
     try:
         query_dbb = Data.query.order_by(Data.id.desc()).limit(10)
@@ -34,8 +34,7 @@ def index():
     except:
         db.session.rollback()
 
-    return render_template('index.html', form1=form1, form2=form2,
-            results=query_dbb)
+    return render_template('index.html', form1=form1, results=query_dbb)
 
 if __name__ == '__main__':
     application.run(host='0.0.0.0')
