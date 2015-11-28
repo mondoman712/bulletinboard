@@ -1,5 +1,6 @@
 flask-aws/*
 *.swp
+*.pyc
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
