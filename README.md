@@ -46,3 +46,8 @@ Using the bottom form, you can see the last 1 to 9 entires of the database in re
 ![results](http://i.imgur.com/LFJeKDz.png)
 
 
+<<<<<<< HEAD
+=======
+A website for HackNotts 2015
+!
+>>>>>>> 22d17785cb653bc187e2d58e89a88a4ebd6d218f
