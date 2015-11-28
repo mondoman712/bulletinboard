@@ -511,6 +511,16 @@ height: 15px;
     margin-right:auto;
     margin-left:auto;
 }
+#space3 {
+    width: 100%;
+	height: 4px;
+    margin-right:auto;
+    margin-left:auto;
+    background: #8c8c8c;
+ 	border-top: solid #999999 2px; 
+ 	border-bottom: solid #999999 2px;  
+
+}
 
 
 
