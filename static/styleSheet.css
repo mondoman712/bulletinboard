@@ -1,0 +1,1081 @@
+ body { 
+    margin: 0;
+    padding: 0;
+
+    background:#1A243F;
+
+}
+
+p {
+}
+h1{
+
+}
+
+#wrapper {
+   width: 960px;
+   height:100%;
+   background: white;
+    margin-right:auto;
+    margin-left:auto;
+}
+#wrapperLoginPage {
+   width: 100%;
+   height:100%;
+   background:;
+    margin-right:auto;
+    margin-left:auto;
+
+}
+#headerUnderLine {
+	width: 100%;
+	height: 50px;
+	background: white;
+	 position: fixed;
+ overflow:hidden;
+  border-bottom: solid #434445 2px;
+
+    box-shadow: 0px 0px 2px 0px #000000;
+
+}
+
+#header {
+	width: 960px;
+	height: 50px;
+  margin-right:auto;
+    margin-left:auto;
+	background:white;
+	z-index : 1;
+	position:fixed;
+	left: 0;
+  right: 0;
+
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+#logo {
+	width: 250px;
+	height: 50px;
+    background: white;
+	float: left;
+	     color: black;
+	       font-size: 30px;
+           font-weight: bold;
+		   font-family: rockwell;
+    margin: auto;
+	         text-align: center;
+			   line-height: 50px;
+                 vertical-align: middle;
+	overflow:hidden;
+	-webkit-transition: all 300ms ease;
+-moz-transition: all 300ms ease;
+-ms-transition: all 300ms ease;
+-o-transition: all 300ms ease;
+transition: all 300ms ease;
+}
+
+#logo:hover {
+color: #B5B2AB;
+}
+
+.subHeading{
+	width: 10%;
+	height: 50px;
+	background:  white;
+	color:black;
+	  float: left;
+		   font-family: geneva;
+		    font-size: 15px;
+         	margin: auto;
+	         text-align: center;
+			   line-height: 50px;
+                 vertical-align: middle;
+                overflow:hidden;
+
+-webkit-transition: background 400ms ease,
+                              color 400ms ease;
+-moz-transition: background 400ms ease,
+                              color 400ms ease;
+-ms-transition:   background 400ms ease,
+                              color 400ms ease;
+-o-transition: background 400ms ease,
+                              color 400ms ease;
+transition: background 400ms ease,
+                              color 400ms ease;
+}
+
+.subHeading:hover {
+	width: 10%;
+	height: 50px;
+	background:   #2F3030;
+	color:white;
+	  float: left;
+		   font-family: geneva;
+		    font-size: 15px;
+         	margin: auto;
+	         text-align: center;
+			   line-height: 50px;
+                 vertical-align: middle;
+                overflow:hidden;
+
+
+
+-webkit-transition: background 400ms ease,
+                              color 400ms ease;
+-moz-transition: background 400ms ease,
+                              color 400ms ease;
+-ms-transition:   background 400ms ease,
+                              color 400ms ease;
+-o-transition: background 400ms ease,
+                              color 400ms ease;
+transition: background 400ms ease,
+                              color 400ms ease;
+}
+
+#subHeading1:active {
+background:#1E4B6C;
+ -webkit-transition:   all 0ms;
+-moz-transition:  all 0ms;
+-ms-transition: all 0ms;
+-o-transition: all 0ms;
+transition: all 0ms;
+}
+#subHeading2:active {
+background:#1E4B6C;
+ -webkit-transition:   all 0ms;
+-moz-transition:  all 0ms;
+-ms-transition: all 0ms;
+-o-transition: all 0ms;
+transition: all 0ms;
+}
+#subHeading3:active {
+background:#1E4B6C;
+ -webkit-transition:   all 0ms;
+-moz-transition:  all 0ms;
+-ms-transition: all 0ms;
+-o-transition: all 0ms;
+transition: all 0ms;
+}
+#subHeading4:active {
+background:#1E4B6C;
+ -webkit-transition:   all 0ms;
+-moz-transition:  all 0ms;
+-ms-transition: all 0ms;
+-o-transition: all 0ms;
+transition: all 0ms;
+}
+#subHeading5:active {
+background:#1E4B6C;
+ -webkit-transition:   all 0ms;
+-moz-transition:  all 0ms;
+-ms-transition: all 0ms;
+-o-transition: all 0ms;
+transition: all 0ms;
+}
+
+#subHeadingSpace{
+width: 10%;
+	height: 50px;
+
+	  float: left;
+         	margin: auto;
+			   line-height: 50px;
+                 vertical-align: middle;
+				 	overflow:hidden;
+}
+
+.divMe{
+width: 90px;
+	height: 50px;
+	background:  white;
+	  float: right;
+		   font-family: geneva;
+		    font-size: 15px;
+	         text-align: center;
+			   line-height: 50px;
+			   overflow:hidden;
+
+-webkit-transition:   color 400ms ease;
+-moz-transition:  color 400ms ease;
+-ms-transition: color 400ms ease;
+-o-transition: color 400ms ease;
+transition: color 400ms ease;
+
+ border-left: solid black 1px;
+ border-right: solid black 1px;
+
+
+}
+
+.tableDisplay{
+width: 90px;
+	height: 50px;
+	background-color:  #E6E6E6;
+ 	float: right;
+		   font-family: geneva;
+		    font-size: 15px;
+	         text-align: center;
+			   line-height: 50px;
+			   overflow:hidden;
+  border-left: solid grey 1px;
+ border-right: solid grey 1px;
+
+}
+
+.divMe:active{
+margin-top: 2px;
+ -webkit-transition-duration:   all 400ms;
+-moz-transition-duration:  all 400ms;
+-ms-transition-duration: all 400ms;
+-o-transition-duration: all 400ms;
+transition-duration: all 400ms;
+}
+
+.divMe:hover {
+color:grey;
+  border-left: solid grey 1px;
+ border-right: solid grey 1px;
+ -webkit-transition-duration:   all 400ms;
+-moz-transition-duration:  all 400ms;
+-ms-transition-duration: all 400ms;
+-o-transition-duration: all 400ms;
+transition-duration: all 400ms;
+}
+
+.tableDisplay ul {
+    display: block;
+    position: fixed;
+    margin-left: -123px;
+	margin-top:0px;
+	list-style-type: none;
+    padding: 0;
+	width: 214px;
+	}
+
+.tableDisplay ul li{
+    text-decoration: none;
+    color: black;
+	background-color: #E6E6E6;
+	    font-family: geneva;
+		font-size: 15px;
+		text-align: left;
+	border-bottom: 1px solid white;
+
+}
+
+.tableDisplay ul li:hover {
+  background-color: #0B2DE5;
+  color: white;
+  text-decoration: none;
+}
+
+.dropDownH{
+
+	display: block;
+	width: 100%;
+	height: 2px;
+	background:#434445;
+	position: fixed;
+    overflow:hidden;
+    margin-top:50px;
+	overflow:hidden;
+-webkit-transition: background 600ms ease, height 400ms ease;
+-moz-transition: background 600ms ease, height 400ms ease;
+-ms-transition:   background 600ms ease, height 400ms ease;
+-o-transition: background 600ms ease, height 400ms ease;
+transition: background 600ms ease, height 400ms ease;
+}
+
+.dropDownD {
+    display: block;
+	width: 100%;
+	height: 300px;
+	background:#2F3030;
+	position: fixed;
+    margin-top:50px;
+	overflow:hidden;
+-webkit-transition: background 800ms ease, height 300ms ease;
+-moz-transition: background 800ms ease, height 300ms ease;
+-ms-transition:   background 800ms ease, height 300ms ease;
+-o-transition: background 800ms ease, height 300ms ease;
+transition: background 800ms ease, height 300ms ease;
+    -webkit-transition-delay: 400ms;
+    -moz-transition-delay: 400ms;
+	-ms-transition-delay: 400ms;
+    -o-transition-delay: 400ms;
+    transition-delay: 400ms;
+z-index : 1;
+}
+
+#dropDownBox{
+	width: 960px;
+	height: 100%;
+  margin-right:auto;
+	margin-left:auto;
+
+	background:;
+	left: 0;
+  right: 0;
+
+}
+
+#dropDownTable1{
+	width: 250px;
+	height: 100%;
+    float:left;
+
+    background:#292929;
+
+}
+.dropDownListSpace{
+height: 15px;
+}
+.dropDownList1{
+    width: 250px;
+	height: 45px;
+	line-height: 40px;
+	color: white;
+	font-family: ;
+	font-size: 18px;
+	text-align: left;
+
+
+	    -webkit-transition: background 100ms ease-out;
+    -moz-transition: background 100ms ease-out;
+	-ms-transition: background 100ms ease-out;
+    -o-transition: background 100ms ease-out;
+    transition: background 100ms ease-out;
+}
+.dropDownList1:hover{
+
+   background:#1E4B6C;
+   color:black;
+       -webkit-transition: 0ms;
+    -moz-transition: 0ms;
+	-ms-transition: 0ms;
+    -o-transition: 0ms;
+    transition: 0ms;
+}
+.dropDownList2{
+    width: 250px;
+	height: 45px;
+	line-height: 40px;
+	color: white;
+	font-family: ;
+	font-size: 18px;
+	text-align: left;
+
+
+	    -webkit-transition: background 100ms ease-out;
+    -moz-transition: background 100ms ease-out;
+	-ms-transition: background 100ms ease-out;
+    -o-transition: background 100ms ease-out;
+    transition: background 100ms ease-out;
+}
+.dropDownList2:hover{
+
+   background:#1E4B6C;
+   color:black;
+       -webkit-transition: 0ms;
+    -moz-transition: 0ms;
+	-ms-transition: 0ms;
+    -o-transition: 0ms;
+    transition: 0ms;
+}
+.dropDownList3{
+    width: 250px;
+	height: 45px;
+	line-height: 40px;
+	color: white;
+	font-family: ;
+	font-size: 18px;
+	text-align: left;
+
+
+	    -webkit-transition: background 100ms ease-out;
+    -moz-transition: background 100ms ease-out;
+	-ms-transition: background 100ms ease-out;
+    -o-transition: background 100ms ease-out;
+    transition: background 100ms ease-out;
+}
+.dropDownList3:hover{
+
+   background:#1E4B6C;
+   color:black;
+       -webkit-transition: 0ms;
+    -moz-transition: 0ms;
+	-ms-transition: 0ms;
+    -o-transition: 0ms;
+    transition: 0ms;
+}
+.dropDownList4{
+    width: 250px;
+	height: 45px;
+	line-height: 40px;
+	color: white;
+	font-family: ;
+	font-size: 18px;
+	text-align: left;
+
+
+	    -webkit-transition: background 100ms ease-out;
+    -moz-transition: background 100ms ease-out;
+	-ms-transition: background 100ms ease-out;
+    -o-transition: background 100ms ease-out;
+    transition: background 100ms ease-out;
+}
+.dropDownList4:hover{
+
+   background:#1E4B6C;
+   color:black;
+       -webkit-transition: 0ms;
+    -moz-transition: 0ms;
+	-ms-transition: 0ms;
+    -o-transition: 0ms;
+    transition: 0ms;
+}
+.dropDownList5{
+    width: 250px;
+	height: 45px;
+	line-height: 40px;
+	color: white;
+	font-family: ;
+	font-size: 18px;
+	text-align: left;
+
+
+	    -webkit-transition: background 100ms ease-out;
+    -moz-transition: background 100ms ease-out;
+	-ms-transition: background 100ms ease-out;
+    -o-transition: background 100ms ease-out;
+    transition: background 100ms ease-out;
+}
+.dropDownList5:hover{
+
+   background:#1E4B6C;
+   color:black;
+       -webkit-transition: 0ms;
+    -moz-transition: 0ms;
+	-ms-transition: 0ms;
+    -o-transition: 0ms;
+    transition: 0ms;
+}
+
+#dropDownTable2{
+	width: 236.6666666666667px;
+	height: 100%;
+  float:left;
+    background:;
+
+}
+
+
+
+#dropDownTable3{
+	width: 236.6666666666667px;
+	height: 100%;
+ float:left;
+    background:;
+
+}
+
+
+
+#dropDownTable4{
+	width: 236.6666666666667px;
+	height: 100%;
+   float:left;
+    background:;
+
+}
+
+
+#spaceDemo {
+    width: 100%;
+	height: 2800px;
+	background:white;
+}
+#space1 {
+    width: 100%;
+	height: 100px;
+    margin-right:auto;
+    margin-left:auto;
+}
+#space2 {
+    width: 100%;
+	height: 50px;
+    margin-right:auto;
+    margin-left:auto;
+}
+#space3 {
+    width: 100%;
+	height: 4px;
+    margin-right:auto;
+    margin-left:auto;
+    background: #8c8c8c;
+ 	border-top: solid #999999 2px;
+ 	border-bottom: solid #999999 2px;
+
+}
+
+
+
+#headerLogin {
+	width: 100%;
+	height: 50px;
+  margin-right:auto;
+    margin-left:auto;
+	background:white;
+	z-index : 1;
+	position:fixed;
+	left: 0;
+  right: 0;
+   border-bottom: solid #434445 2px;
+    overflow:hidden;
+
+   box-shadow: 0px 0px 2px 0px #000000;
+
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+
+#login{
+	width: 10%;
+	height: 50px;
+	background:  white;
+	color:black;
+	  float: left;
+		   font-family: geneva;
+		    font-size: 15px;
+         	margin: auto;
+	         text-align: center;
+			   line-height: 50px;
+                 vertical-align: middle;
+                overflow:hidden;
+
+-webkit-transition: background 400ms ease,
+                              color 400ms ease;
+-moz-transition: background 400ms ease,
+                              color 400ms ease;
+-ms-transition:   background 400ms ease,
+                              color 400ms ease;
+-o-transition: background 400ms ease,
+                              color 400ms ease;
+transition: background 400ms ease,
+                              color 400ms ease;
+}
+
+#login:hover {
+	width: 10%;
+	height: 50px;
+	background:   #2F3030;
+	color:white;
+	  float: left;
+		   font-family: geneva;
+		    font-size: 15px;
+         	margin: auto;
+	         text-align: center;
+			   line-height: 50px;
+                 vertical-align: middle;
+                overflow:hidden;
+
+
+
+-webkit-transition: background 400ms ease,
+                              color 400ms ease;
+-moz-transition: background 400ms ease,
+                              color 400ms ease;
+-ms-transition:   background 400ms ease,
+                              color 400ms ease;
+-o-transition: background 400ms ease,
+                              color 400ms ease;
+transition: background 400ms ease,
+                              color 400ms ease;
+}
+
+#login:active {
+background:#1E4B6C;
+ -webkit-transition:   all 0ms;
+-moz-transition:  all 0ms;
+-ms-transition: all 0ms;
+-o-transition: all 0ms;
+transition: all 0ms;
+}
+#signUp{
+	width: 10%;
+	height: 50px;
+	background:  white;
+	color:black;
+	  float: left;
+		   font-family: geneva;
+		    font-size: 15px;
+         	margin: auto;
+	         text-align: center;
+			   line-height: 50px;
+                 vertical-align: middle;
+                overflow:hidden;
+
+-webkit-transition: background 400ms ease,
+                              color 400ms ease;
+-moz-transition: background 400ms ease,
+                              color 400ms ease;
+-ms-transition:   background 400ms ease,
+                              color 400ms ease;
+-o-transition: background 400ms ease,
+                              color 400ms ease;
+transition: background 400ms ease,
+                              color 400ms ease;
+}
+
+#signUp:hover {
+	width: 10%;
+	height: 50px;
+	background:   #2F3030;
+	color:white;
+	  float: left;
+		   font-family: geneva;
+		    font-size: 15px;
+         	margin: auto;
+	         text-align: center;
+			   line-height: 50px;
+                 vertical-align: middle;
+                overflow:hidden;
+
+
+
+-webkit-transition: background 400ms ease,
+                              color 400ms ease;
+-moz-transition: background 400ms ease,
+                              color 400ms ease;
+-ms-transition:   background 400ms ease,
+                              color 400ms ease;
+-o-transition: background 400ms ease,
+                              color 400ms ease;
+transition: background 400ms ease,
+                              color 400ms ease;
+}
+
+#signUp:active {
+background:#1E4B6C;
+ -webkit-transition:   all 0ms;
+-moz-transition:  all 0ms;
+-ms-transition: all 0ms;
+-o-transition: all 0ms;
+transition: all 0ms;
+}
+
+#wallpaper {
+	width: 100%;
+	height: 100%;
+	background:white;
+	position: fixed;
+    top:0;
+	bottom:0;
+
+}
+
+#loginPageBox {
+	width: 100%;
+	height: 300px;
+	background:#F1F1F1;
+	position: fixed;
+    margin-top:50px;
+
+}
+
+
+.loginDropDownH {
+	width: 100%;
+	height: 2px;
+	background:#434445;
+	position: fixed;
+    overflow:hidden;
+    margin-top:50px;
+	overflow:hidden;
+	z-index : 1;
+	-webkit-transition: background 600ms ease, height 400ms ease;
+-moz-transition: background 600ms ease, height 400ms ease;
+-ms-transition:   background 600ms ease, height 400ms ease;
+-o-transition: background 600ms ease, height 400ms ease;
+transition: background 600ms ease, height 400ms ease;
+    -webkit-transition-delay: 00ms;
+    -moz-transition-delay: 00ms;
+	-ms-transition-delay: 00ms;
+    -o-transition-delay: 00ms;
+    transition-delay: 00ms;
+}
+
+.loginDropDownD {
+	width: 100%;
+	height: 300px;
+	background:#2F3030;
+	position: fixed;
+    margin-top:50px;
+	overflow:hidden;
+	z-index : 1;
+-webkit-transition: background 800ms ease, height 400ms ease;
+-moz-transition: background 800ms ease, height 400ms ease;
+-ms-transition:   background 800ms ease, height 400ms ease;
+-o-transition: background 800ms ease, height 400ms ease;
+transition: background 800ms ease, height 400ms ease;
+  -webkit-transition-delay: 400ms;
+    -moz-transition-delay: 400ms;
+	-ms-transition-delay: 400ms;
+    -o-transition-delay: 400ms;
+    transition-delay: 400ms;
+
+}
+#signUpBox {
+	width: 660px;
+	height: 100%;
+	background:;
+    margin-right:auto;
+	margin-left:auto;
+    overflow:hidden;
+
+   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+#signUpBox1 {
+	width: 100%;
+	height: 50px;
+    margin-right:auto;
+	margin-left:auto;
+
+}
+#signUpBox2 {
+	width: 200px;
+	height: 150px;
+    margin-right:auto;
+	margin-left:auto;
+	float:left;
+
+}
+#signUpBox3 {
+	width: 10px;
+	height: 150px;
+    margin-right:auto;
+	margin-left:auto;
+    float:left;
+
+}
+#signUpBox4 {
+	width: 450px;
+	height: 150px;
+    margin-right:auto;
+	margin-left:auto;
+    float:left;
+
+}
+
+#loginBox{
+	width: 660px;
+	height: 100%;
+	background:;
+    margin-right:auto;
+	margin-left:auto;
+    overflow:hidden;
+
+   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+input[type=submit]{
+    background-color: #2F3030;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius:3px;
+    color: white;
+    font-family: Oswald;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+	  box-shadow: 0px 0px 1px #777;
+    border:none;
+}
+input[type=submit]:hover {
+    border: none;
+    background:#292929;
+    box-shadow: 0px 0px 1px #777;
+}
+input[type=submit]:active {
+    border: none;
+    background:#292929;
+    box-shadow: 0px 0px 1px #777;
+}
+input[type=text]{
+    color: black;
+    font-family: rockwell;
+    font-size: 18px;
+	background:white;
+    border: 2px solid #F1F1F1;
+	   -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius:3px;
+	width:190px;
+	hieght:50px;
+
+	 -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+}
+input[type=text]:hover {
+
+	background:#E0E0E0;
+    border: 2px solid white;
+	   -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius:3px;
+
+
+	 -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+   transition: all 200ms ease-in-out;
+}
+input[type=text]:focus {
+
+   outline:none;
+   background-color: #E0E0E0;
+   border: 2px solid white;
+   -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius:3px;
+
+	  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+   transition: all 200ms ease-in-out;
+}
+.h1Login {
+color:#F1F1F1;
+     font-size: 30px;
+           font-weight: bold;
+		   font-family: rockwell;
+          	   align:center;
+}
+.pLogin {
+color:white;
+     font-size: 14px;
+
+		   font-family: rockwell;
+		       margin: 0;
+			   align:center;
+}
+
+#yruler {
+   	width: 2px;
+	height: calc (100% + 2px);
+	background: ;
+	top:0px;
+      bottom: -2px;
+    margin-right:auto;
+    margin-left:auto;
+	position:absolute;
+}
+
+
+#box {
+background:#F1F1F1;
+width:100%;
+height:2px;
+position:fixed;
+bottom:0px;
+overflow:hidden;
+}
+#aboutTable{
+    width:350px;
+    height: 75px;
+ 	   font-family: geneva;
+		    font-size: 12px;
+}
+a:link {
+    text-decoration: none;
+	color:black;
+}
+a:visited {
+    text-decoration: none;
+		color:black;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+#passwordBox {
+    color: white;
+	width:200px;
+    height:50px;
+    font-family: rockwell;
+    font-size: 18px;
+	text-align: center;
+	padding:10px;
+	background:#2F3030;
+	top:52px;
+	position:fixed;
+   	z-index : 1;
+
+	border:3px solid white;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius:3px;
+	-webkit-transition: all 900ms ease-in-out;
+  -moz-transition: all 900ms ease-in-out;
+  -ms-transition: all 900ms ease-in-out;
+  -o-transition: all 900ms ease-in-out;
+   transition: all 900ms ease-in-out;
+}
+.passwordBoxH{
+right:-350px;
+
+}
+.passwordBoxD{
+right:0px;
+
+}
+
+// Set background image (pattern)
+
+*{
+  -ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+// Start styles in form
+
+.login{
+  position: relative;
+  top: 50%;
+	width: 250px;
+  display: table;
+  margin: -150px auto 0 auto;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.legend{
+  position: relative;
+  width: 100%;
+  display: block;
+  background: #FF7052;
+  padding: 15px;
+  color: #fff;
+  font-size: 20px;
+
+  &:after{
+    content: "";
+    background-image: url(http://simpleicon.com/wp-content/uploads/multy-user.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: 152px -16px;
+    opacity: 0.06;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.input{
+  position: relative;
+  width: 90%;
+  margin: 15px auto;
+
+  span{
+    position: absolute;
+    display: block;
+    color: darken(#EDEDED, 10%);
+    left: 10px;
+    top: 8px;
+    font-size: 20px;
+  }
+
+  input{
+    width: 100%;
+    padding: 10px 5px 10px 40px;
+    display: block;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    transition: 0.2s ease-out;
+    color: darken(#EDEDED, 30%);
+
+    &:focus{
+      padding: 10px 5px 10px 10px;
+      outline: 0;
+      border-color: #FF7052;
+    }
+  }
+}
+
+.submit{
+  width: 45px;
+  height: 45px;
+  display: block;
+  margin: 0 auto -15px auto;
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid #FF7052;
+  color: #FF7052;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 7px #fff;
+  transition: 0.2s ease-out;
+
+  &:hover, &:focus{
+    background: #FF7052;
+    color: #fff;
+    outline: 0;
+  }
+}
+
+.feedback{
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #2ecc71;
+  padding: 10px 0;
+  font-size: 12px;
+  display: none;
+  opacity: 0;
+
+  &:before{
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(46, 204, 113, 0);
+    border-bottom-color: #2ecc71;
+    border-width: 10px;
+    margin-left: -10px;
+
+  }
+}
