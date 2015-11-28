@@ -108,7 +108,7 @@ transition: background 400ms ease,
                               color 400ms ease;
 }
 
-.subHeadingHover { 
+.subHeading:hover { 
 	width: 10%;
 	height: 50px;
 	background:   #2F3030; 
@@ -942,14 +942,3 @@ right:0px;
 }
 
 
-
-
-
-
-
-
-
-/*
-Website idea and build start date 09/08/2014
-help other people by sharing your ideas, whether they're sensible, silly or strange but at the same time ingenious that's for everyone else to decide. 
-*/ 
