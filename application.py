@@ -23,8 +23,6 @@ def index():
             db.session.close()
         except:
             db.session.rollback()
-        return render_template('thanks.html', notes=form1.dbNotes.data,
-               data=data_entered)
 
     try:
         query_dbb = Data.query.order_by(Data.id.desc()).limit(10)
