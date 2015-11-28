@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+      <link type="text/css" rel="stylesheet" href="styleSheet.css"/>
+         
+      <title>Bulletin Board</title> 
+	  <!--<link rel="shortcut icon" href="favicon1.ico" />-->
+	<script>
+
+ function showTable() {
+     if (document.getElementById("subHeading6").className == "divMe" ) {
+	     document.getElementById("subHeading6").className = "tableDisplay";	
+   } else {
+         document.getElementById("subHeading6").className = "divMe";
+        }
+}
+ function hideTable() {
+      if (document.getElementById("subHeading6").className == "tableDisplay") { 
+		document.getElementById("subHeading6").className = "divMe";
+    }
+}
+document.onclick = function(ht){
+    if( ht.target.className !== 'tableDisplay'){
+        hideTable();
+    }
+};
+
+function drop1() {
+
+    document.getElementById('dropDown1').className = "dropDownD";
+	  document.getElementById('subHeading1').className = "subHeadingHover";
+	 
+	 hideTable();
+}
+function hide1() {
+    document.getElementById('dropDown1').className = "dropDownH";
+	document.getElementById('subHeading1').className = "subHeading";
+}
+
+function drop2() {
+
+    document.getElementById('dropDown2').className = "dropDownD";
+	  document.getElementById('subHeading2').className = "subHeadingHover";
+	 
+	 hideTable();
+}
+function hide2() {
+    document.getElementById('dropDown2').className = "dropDownH";
+	document.getElementById('subHeading2').className = "subHeading";
+}
+
+function drop3() {
+
+    document.getElementById('dropDown3').className = "dropDownD";
+	  document.getElementById('subHeading3').className = "subHeadingHover";
+	 
+	 hideTable();
+}
+function hide3() {
+    document.getElementById('dropDown3').className = "dropDownH";
+	document.getElementById('subHeading3').className = "subHeading";
+}
+
+function drop4() {
+
+    document.getElementById('dropDown4').className = "dropDownD";
+	  document.getElementById('subHeading4').className = "subHeadingHover";
+	 
+	 hideTable();
+}
+function hide4() {
+    document.getElementById('dropDown4').className = "dropDownH";
+	document.getElementById('subHeading4').className = "subHeading";
+}
+
+function drop5() {
+
+    document.getElementById('dropDown5').className = "dropDownD";
+	  document.getElementById('subHeading5').className = "subHeadingHover";
+	 
+	 hideTable();
+}
+function hide5() {
+    document.getElementById('dropDown5').className = "dropDownH";
+	document.getElementById('subHeading5').className = "subHeading";
+}
+
+	</script>	  
+</head>
+	
+
+ <div id="header">
+
+<div id="logo"onclick="location.href='homePage.html';" style="cursor: pointer;">
+Bulletin
+</div>
+
+
+<div id="subHeading1" class="subHeading" onclick="location.href='page1.html';" onmouseover="drop1()" onmouseout="hide1()" style="cursor: pointer;">
+?????
+</div>
+
+<div id="subHeading2" class="subHeading" onclick="location.href='page2.html';" onmouseover="drop2()" onmouseout="hide2()" style="cursor: pointer;">
+????
+</div>
+
+<div id="subHeading3" class="subHeading" onclick="location.href='page3.html';" onmouseover="drop3()" onmouseout="hide3()" style="cursor: pointer;">
+????
+</div>
+
+<div id="subHeading4" class="subHeading" onclick="location.href='page4.html';" onmouseover="drop4()" onmouseout="hide4()" style="cursor: pointer;">
+????
+</div>
+
+<div id="subHeading5" class="subHeading" onclick="location.href='page5.html';" onmouseover="drop5()" onmouseout="hide5()" style="cursor: pointer;">
+????
+</div>
+
+<div id="subHeadingSpace">
+</div>
+
+<div id="subHeading6" class="divMe" onclick='showTable()' style="cursor: pointer;">
+Me &#9662;
+        <ul id="table">
+			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Profile</li>
+			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Settings</li>     
+			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Help</li>     
+			<li onclick="location.href='logOut.php';">&nbsp;&nbsp;Log out</li>     
+	    </ul>
+</div>
+
+</div><!-- header -->
+
+<div id="dropDown1" class="dropDownH" onmouseover="drop1()" onmouseout="hide1()">
+<div id="dropDownBox">
+
+<div id="dropDownTable1">
+       
+	        <div class="dropDownListSpace"></div>   
+			<div class="dropDownList1" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;consectetur</div>
+			<div class="dropDownList1" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;adipiscing elit</div>     
+			<div class="dropDownList1" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;Duis tristique</div>     
+			<div class="dropDownList1" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;ornare nisi</div>     
+	        <div class="dropDownList1" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;vel imperdiet</div>    
+            <div class="dropDownList1" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;arcu congue</div>			
+</div>
+
+<div id="dropDownTable2">
+
+</div>
+<div id="dropDownTable3">
+
+</div>
+<div id="dropDownTable4">
+
+</div>
+</div>
+</div>
+
+
+
+
+<div id="dropDown2" class="dropDownH" onmouseover="drop2()" onmouseout="hide2()">
+<div id="dropDownBox">
+
+<div id="dropDownTable1">
+       
+	        <div class="dropDownListSpace"></div>   
+			<div class="dropDownList2" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;consectetur</div>
+			<div class="dropDownList2" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;adipiscing elit</div>     
+			<div class="dropDownList2" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;Duis tristique</div>     
+			<div class="dropDownList2" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;ornare nisi</div>     
+	        <div class="dropDownList2" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;vel imperdiet</div>    
+            <div class="dropDownList2" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;arcu congue</div>			
+</div>
+
+<div id="dropDownTable2">
+
+</div>
+<div id="dropDownTable3">
+
+</div>
+<div id="dropDownTable4">
+
+</div>
+</div>
+</div>
+
+
+
+<div id="dropDown3" class="dropDownH" onmouseover="drop3()" onmouseout="hide3()">
+<div id="dropDownBox">
+
+<div id="dropDownTable1">
+       
+	        <div class="dropDownListSpace"></div>   
+			<div class="dropDownList3" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;consectetur</div>
+			<div class="dropDownList3" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;adipiscing elit</div>     
+			<div class="dropDownList3" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;Duis tristique</div>     
+			<div class="dropDownList3" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;ornare nisi</div>     
+	        <div class="dropDownList3" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;vel imperdiet</div>    
+            <div class="dropDownList3" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;arcu congue</div>			
+</div>
+
+<div id="dropDownTable2">
+
+</div>
+<div id="dropDownTable3">
+
+</div>
+<div id="dropDownTable4">
+
+</div>
+</div>
+</div>
+
+
+
+<div id="dropDown4" class="dropDownH" onmouseover="drop4()" onmouseout="hide4()">
+<div id="dropDownBox">
+
+<div id="dropDownTable1">
+       
+	        <div class="dropDownListSpace"></div>   
+			<div class="dropDownList4" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;consectetur</div>
+			<div class="dropDownList4" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;adipiscing elit</div>     
+			<div class="dropDownList4" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;Duis tristique</div>     
+			<div class="dropDownList4" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;ornare nisi</div>     
+	        <div class="dropDownList4" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;vel imperdiet</div>    
+            <div class="dropDownList4" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;arcu congue</div>			
+</div>
+
+<div id="dropDownTable2">
+
+</div>
+<div id="dropDownTable3">
+
+</div>
+<div id="dropDownTable4">
+
+</div>
+</div>
+</div>
+
+
+
+<div id="dropDown5" class="dropDownH" onmouseover="drop5()" onmouseout="hide5()">
+<div id="dropDownBox">
+
+<div id="dropDownTable1">
+       
+	        <div class="dropDownListSpace"></div>   
+			<div class="dropDownList5" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;consectetur</div>
+			<div class="dropDownList5" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;adipiscing elit</div>     
+			<div class="dropDownList5" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;Duis tristique</div>     
+			<div class="dropDownList5" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;ornare nisi</div>     
+	        <div class="dropDownList5" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;vel imperdiet</div>    
+            <div class="dropDownList5" onclick="location.href='page5.html';" style="cursor: pointer;">&nbsp;&nbsp;arcu congue</div>			
+</div>
+
+<div id="dropDownTable2">
+
+</div>
+<div id="dropDownTable3">
+
+</div>
+<div id="dropDownTable4">
+
+</div>
+</div>
+</div>
+
+
+
+
+<div id="headerUnderLine">
+</div>
+</html>
