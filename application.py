@@ -16,7 +16,7 @@ from application.forms import EnterDBInfo, RetrieveDBInfo
 application = Flask(__name__)
 application.debug=True
 # change this to your own value
-application.secret_key = 'cC1YCIWOj9GgWspgNEo2'   
+application.secret_key = 'AKIAJ57Y5MQFPGR2DPLQ'   
 
 @application.route('/', methods=['GET', 'POST'])
 @application.route('/index', methods=['GET', 'POST'])
