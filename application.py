@@ -44,18 +44,19 @@ def index():
             db.session.close()
         except:
             db.session.rollback()
-        return render_template('results.html', results=query_db, num_return=num_return)
+        return render_template('results.html', results=query_db,
+                num_return=num_return)
 
-        try:
-            num_return = 9
-            query_dbb = Data.query.order_by(Data.id.desc()).limit(num_return)
-            for q in query_dbb:
-                print(q.notes)
-            db.session.close()
-        except:
-            db.session.rollback()
+    try:
+        query_dbb = Data.query.order_by(Data.id.desc()).limit(10)
+        for q in query_dbb:
+            print(q.notes)
+        db.session.close()
+    except:
+        db.session.rollback()
 
-    return render_template('index.html', form1=form1, form2=form2)
+    return render_template('index.html', form1=form1, form2=form2,
+            results=query_dbb)
 
 if __name__ == '__main__':
     application.run(host='0.0.0.0')
