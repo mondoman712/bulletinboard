@@ -16,7 +16,8 @@ def index():
     form1 = EnterDBInfo(request.form)
 
     if request.method == 'POST' and form1.validate():
-        data_entered = Data(notes=form1.dbNotes.data)
+        data_entered = Data(notes=form1.dbNotes.data, username=form1.dbUsername.data)
+        # username = Data(notes=form1.dbUsername.data)
         try:
             db.session.add(data_entered)
             db.session.commit()
@@ -27,7 +28,7 @@ def index():
     try:
         query_dbb = Data.query.order_by(Data.id.desc()).limit(10)
         for q in query_dbb:
-            print(q.notes)
+            print(q.notes, q.username)
         db.session.close()
     except:
         db.session.rollback()
