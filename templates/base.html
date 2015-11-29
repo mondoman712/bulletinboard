@@ -1,19 +1,85 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Flask-AWS Example</title>
         {% block head %}
      <!--<link type="text/css" rel="stylesheet" href="styleSheet.css"/>-->
       <link rel="stylesheet" href="{{ url_for('static', filename='styleSheet.css') }}">
+      <title>Bulletin Board</title>
       {% endblock %}
   
      <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 +    <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />-->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
+    <script>
+ function showTable() {
+     if (document.getElementById("subHeading6").className == "divMe" ) {
+	     document.getElementById("subHeading6").className = "tableDisplay";
+   } else {
+         document.getElementById("subHeading6").className = "divMe";
+        }
+}
+ function hideTable() {
+      if (document.getElementById("subHeading6").className == "tableDisplay") {
+		document.getElementById("subHeading6").className = "divMe";
+    }
+}
+document.onclick = function(ht){
+    if( ht.target.className !== 'tableDisplay'){
+        hideTable();
+    }
+};
 
+</script>
+</head>
+
+
+	
+<body>
+
+ <div id="header">
+
+<div id="logo"onclick="location.href='index.html';" style="cursor: pointer;">
+Bulletin Board
+</div>
+
+
+<div id="subHeading1" class="subHeading" onclick="location.href='page1.html';" style="cursor: pointer;">
+events
+</div>
+
+<div id="subHeading2" class="subHeading" onclick="location.href='page2.html';" style="cursor: pointer;">
+lorem ipsum
+</div>
+
+<div id="subHeading3" class="subHeading" onclick="location.href='page3.html';"  style="cursor: pointer;">
+Hottest
+</div>
+
+<div id="subHeading2" class="subHeading" onclick="location.href='page4.html';" style="cursor: pointer;">
+Most Recent
+</div>
+
+<div id="subHeading3" class="subHeading" onclick="location.href='login.html';"  style="cursor: pointer;">
+Log In
+</div>
+
+
+<div id="subHeadingSpace">
+</div>
+
+<div id="subHeading6" class="divMe" onclick='showTable()' style="cursor: pointer;">
+Home &#9662;
+        <ul id="table">
+			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Profile</li>
+			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Settings</li>
+			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Help</li>
+			<li onclick="location.href='logOut.php';">&nbsp;&nbsp;Log out</li>
+	    </ul>
+</div>
+
+</div><!-- header -->
+<div id="headerUnderLine">
+</div>
     {% block content %} {% endblock %}
-    
-  </body>
-</html>  
+
