@@ -28,7 +28,7 @@
   <thead>
 {% for z in results %}
     <tr>
-	    <td><a href="/post/{{z.id}}">{{z.notes}}</a> -- posted by <a href="/post/{{z.username}}">{{z.username}}</a></td>
+	    <td><a href="/post/{{z.id}}">{{z.notes}}</a> -- posted by {{z.username}}</td>
 	     
     </tr>
 {% endfor %}
