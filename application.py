@@ -15,11 +15,20 @@ def get_first(iterable, default=None):
             return item
     return default
 
+@application.route('/user/<uname>')
+def show_user(uname):
+    try:    
+        query_db = Data.query.filter(Data.username==uname)
+        db.session.close()
+    except:
+        print('ERROR')
+        db.session.rollback()
+    return render_template('user.html', results=query_db)
+
 @application.route('/post/<int:post_id>')
 def show_post(post_id):
     try:    
         query_db = Data.query.filter(Data.id==post_id)
-        #print(post_id, query_db.id)
         db.session.close()
     except:
         print('ERROR')
