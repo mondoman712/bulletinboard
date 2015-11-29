@@ -2,7 +2,7 @@
  body { 
     margin: 0; 
     padding: 0; 
-
+	background:white;
 }
 
 p { 
@@ -35,6 +35,7 @@ h1{
   border-bottom: solid #434445 2px; 
   
     box-shadow: 0px 0px 2px 0px #000000;
+    top:0;
 
 }
 
