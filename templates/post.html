@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link type="text/css" rel="stylesheet" href={{ url_for('static', filename='styleSheet.css') }}/>
+
+      <title>Bulletin Board</title>
+	  <!--<link rel="shortcut icon" href="favicon1.ico" />-->
+	<script>
+ function showTable() {
+     if (document.getElementById("subHeading6").className == "divMe" ) {
+	     document.getElementById("subHeading6").className = "tableDisplay";
+   } else {
+         document.getElementById("subHeading6").className = "divMe";
+        }
+}
+ function hideTable() {
+      if (document.getElementById("subHeading6").className == "tableDisplay") {
+		document.getElementById("subHeading6").className = "divMe";
+    }
+}
+document.onclick = function(ht){
+    if( ht.target.className !== 'tableDisplay'){
+        hideTable();
+    }
+};
+
+</script>
+</head>
+<body>
+
+ <div id="header">
+
+<div id="logo"onclick="location.href='index.html';" style="cursor: pointer;">
+Bulletin Board
+</div>
+
+
+<div id="subHeading1" class="subHeading" onclick="location.href='page1.html';" style="cursor: pointer;">
+events
+</div>
+
+<div id="subHeading2" class="subHeading" onclick="location.href='page2.html';" style="cursor: pointer;">
+lorem ipsum
+</div>
+
+<div id="subHeading3" class="subHeading" onclick="location.href='page3.html';"  style="cursor: pointer;">
+Hottest
+</div>
+
+<div id="subHeading2" class="subHeading" onclick="location.href='page4.html';" style="cursor: pointer;">
+Most Recent
+</div>
+
+<div id="subHeading3" class="subHeading" onclick="location.href='login.html';"  style="cursor: pointer;">
+Log In
+</div>
+
+
+<div id="subHeadingSpace">
+</div>
+
+<div id="subHeading6" class="divMe" onclick='showTable()' style="cursor: pointer;">
+Home &#9662;
+        <ul id="table">
+			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Profile</li>
+			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Settings</li>
+			<li onclick="location.href='page5.html';">&nbsp;&nbsp;Help</li>
+			<li onclick="location.href='logOut.php';">&nbsp;&nbsp;Log out</li>
+	    </ul>
+</div>
+
+</div><!-- header -->
+<div id="headerUnderLine">
+</div>
+
+
+<div id="wrapper">
+
+<div id="space2">
+
+</div>
+<div id="space3">
+
+</div>
+<div id="space1">
+
+</div>
+<div id="space3">
+
+</div>
+<div id="space2">
+
+</div>
+
+{% extends "base.html" %} {% import 'macros.html' as macros %}
+{% block content %}
+
+
+<div class="col-md-4 col-md-offset-4">
+
+    <table class="table table-striped table-hover">
+  <thead>
+{% for z in results %}
+    <tr>
+      <td>{{z.notes}}</td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+
+
+<hr>
+
+<div class="col-md-4 col-md-offset-4">
+
+<form method="post" action="/index"  id="db_post" name="db_post">
+
+    {{ form1.hidden_tag() }}
+
+    {{ macros.render_field(form1.dbNotes, placeholder='Enter text to submit to the DB', type='dbNotes', label_visible=false) }}
+
+    {{ macros.render_field(form1.dbUsername, placeholder='Enter username plz', type='dbUsername', label_visible=false) }}
+
+    <div align="center"><button type="submit" class="btn btn-primary">Submit</button></p></div>
+
+</form>
+
+</div>
+
+{% endblock %}
+
+
+
+
+</div><!--wrapper-->
+</body>
+</html>
