@@ -2,7 +2,8 @@ from flask import Flask, render_template, request
 from application import db
 from application.models import Data
 from application.forms import EnterDBInfo, RetrieveDBInfo, LoginForm
-from login import LoginManager
+from flask.ext.login import LoginManager
+
 # Elastic Beanstalk initalization
 application = Flask(__name__)
 application.debug=True
@@ -10,7 +11,7 @@ application.debug=True
 application.secret_key = 'Ludlk5uG5GWWrkPnwfwZuWeVcYuBlwaVc9AS8oUo'
 
 login_manager = LoginManager()
-login_manager.init_app(app)
+login_manager.init_app(application)
 
 def get_first(iterable, default=None):
     if iterable:
@@ -18,7 +19,7 @@ def get_first(iterable, default=None):
             return item
     return default
 
-@app.route('/login', methods=['GET', 'POST'])
+@application.route('/login', methods=['GET', 'POST'])
 def login():
     # Here we use a class of some kind to represent and validate our
     # client-side form data. For example, WTForms is a library that will
