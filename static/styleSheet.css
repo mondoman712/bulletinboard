@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
  body { 
     margin: 0; 
     padding: 0; 
@@ -50,7 +50,6 @@ h1{
 	position:fixed;
 	left: 0;
   right: 0;
-  top:0px;
   
     -webkit-user-select: none;
   -moz-user-select: none;    
@@ -1081,8 +1080,7 @@ right:0px;
     
   }
 }
-=======
-<<<<<<< HEAD:static/styleSheet.css
+
  body { 
     margin: 0;
     padding: 0;
@@ -5410,4 +5408,4 @@ right:0px;
     
   }
 }
->>>>>>> b3893121d603b3bf4a5cb92f117ddb2262a0c140
+
