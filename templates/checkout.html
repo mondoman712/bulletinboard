@@ -1,42 +1,3 @@
-{% extends "base.html" %} {% import 'macros.html' as macros %}
-{% block content %}
-
-<div id="wrapper">
-
-<div id="space2">
-
-</div>
-<div id="space3">
-
-</div>
-<div id="space1">
-
-</div>
-<div id="space3">
-
-</div>
-<div id="space2">
-
-</div>
-
-
-<div class="col-md-4 col-md-offset-4">
-
-	<h2> Posts by {{results[1].username}} </h2>
-
-    <table class="table table-striped table-hover">
-  <thead>
-{% for z in results %}
-    <tr>
-	    <td><a href="/post/{{z.id}}">{{z.notes}}</a> -- posted by {{z.username}}</td>
-
-    </tr>
-{% endfor %}
-  </tbody>
-</table>
-
-
-<hr>
 <form id="checkout" method="post" action="/checkout">
   <div id="payment-form"></div>
   <input type="submit" value= "10GBP">
@@ -52,12 +13,3 @@
       container: "payment-form"
     });
 </script>
-
-{% endblock %}
-
-
-
-
-</div><!--wrapper-->
-</body>
-</html>
