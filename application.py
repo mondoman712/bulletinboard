@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from application import db
 from application.models import Data
-from application.forms import EnterDBInfo, RetrieveDBInfo
+from application.forms import EnterDBInfo, RetrieveDBInfo, LoginForm
 
 # Elastic Beanstalk initalization
 application = Flask(__name__)
@@ -14,6 +14,20 @@ def get_first(iterable, default=None):
         for item in iterable:
             return item
     return default
+
+@application.route('/login')
+def login():
+    form = LoginForm(request.form)
+    if form.validate_on_submit():
+        login_user(user)
+        flash('Logged in')
+        next = request.args.get('next')
+
+        if not next_is_valid(next):
+            return abort(400)
+
+        return redirect(next or flask.url_for('index'))
+    return render_template('login.html', form1=form)
 
 @application.route('/user/<uname>')
 def show_user(uname):

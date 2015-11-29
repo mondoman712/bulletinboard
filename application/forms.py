@@ -19,3 +19,15 @@ class RetrieveDBInfo(Form):
             validators=[validators.required(), 
                 validators.Regexp('^\d{1}$',
                     message=u'Enter a number between 0 and 10')])
+
+class LoginForm(Form):
+    dbUser = TextField(label='Items to add to DB', 
+            description="db_enter", 
+            validators=[validators.required(), 
+                validators.Length(min=0, max=128, 
+                    message=u'Enter 128 characters or less')])    
+    dbPass = TextField(label='Items to add to DB', 
+            description="db_enter", 
+            validators=[validators.required(), 
+                validators.Length(min=0, max=128, 
+                    message=u'Enter 128 characters or less')])    
