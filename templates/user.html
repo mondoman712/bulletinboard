@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% import 'macros.html' as macros %}
+{% block content %}
+
+
+<div class="col-md-4 col-md-offset-4">
+
+    <table class="table table-striped table-hover">
+  <thead>
+{% for z in results %}
+    <tr>
+	    <td><a href="post/{{z.id}}">{{z.notes}}</a> -- posted by {{z.username}}</td>
+	     
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+
+
+<hr>
+
+{% endblock %}
+
+
+
+
+</div><!--wrapper-->
+</body>
+</html>
