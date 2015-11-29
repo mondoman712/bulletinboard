@@ -52,8 +52,6 @@ def index():
 
     try:
         query_dbb = Data.query.order_by(Data.id.desc()).limit(10)
-        for q in query_dbb:
-            print(q.id, q.notes, q.username)
         db.session.close()
     except:
         db.session.rollback()
