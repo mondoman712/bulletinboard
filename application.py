@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from application import db
 from application.models import Data
 from application.forms import EnterDBInfo, RetrieveDBInfo, LoginForm
-from flask.ext.login import LoginManager
+from flask_login import LoginManager
 
 # Elastic Beanstalk initalization
 application = Flask(__name__)
