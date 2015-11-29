@@ -3,10 +3,13 @@
   <head>
     <title>Flask-AWS Example</title>
         {% block head %}
+     <!--<link type="text/css" rel="stylesheet" href="styleSheet.css"/>-->
       <link rel="stylesheet" href="{{ url_for('static', filename='styleSheet.css') }}">
       <title>Bulletin Board</title>
 		      {% endblock %}
- 
+  
+     <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
++    <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
  function showTable() {
@@ -33,7 +36,7 @@ document.onclick = function(ht){
 
 	
 <body>
-   {% block content %}
+
  <div id="header">
 
 <div id="logo"onclick="location.href='index.html';" style="cursor: pointer;">
@@ -78,5 +81,5 @@ Home &#9662;
 </div><!-- header -->
 <div id="headerUnderLine">
 </div>
-  {% endblock %}
+    {% block content %} {% endblock %}
 
