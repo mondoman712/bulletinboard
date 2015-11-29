@@ -7,6 +7,11 @@ class EnterDBInfo(Form):
             validators=[validators.required(), 
                 validators.Length(min=0, max=128, 
                     message=u'Enter 128 characters or less')])    
+    dbUsername = TextField(label='Items to add to DB', 
+            description="db_enter", 
+            validators=[validators.required(), 
+                validators.Length(min=0, max=128, 
+                    message=u'Enter 128 characters or less')])    
 
 class RetrieveDBInfo(Form):
     numRetrieve = TextField(label='Number of DB Items to Get', 
