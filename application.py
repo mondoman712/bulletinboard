@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from application import db
 from application.models import Data
-from application.forms import EnterDBInfo, RetrieveDBInfo
+from application.forms import EnterDBInfo, RetrieveDBInfo, LoginForm
 
 # Elastic Beanstalk initalization
 application = Flask(__name__)
@@ -15,9 +15,23 @@ def get_first(iterable, default=None):
             return item
     return default
 
+@application.route('/login')
+def login():
+    form = LoginForm(request.form)
+    if form.validate_on_submit():
+        login_user(user)
+        flash('Logged in')
+        next = request.args.get('next')
+
+        if not next_is_valid(next):
+            return abort(400)
+
+        return redirect(next or flask.url_for('index'))
+    return render_template('login.html', form1=form)
+
 @application.route('/user/<uname>')
 def show_user(uname):
-    try:    
+    try:
         query_db = Data.query.filter(Data.username==uname)
         db.session.close()
     except:
@@ -27,7 +41,7 @@ def show_user(uname):
 
 @application.route('/post/<int:post_id>')
 def show_post(post_id):
-    try:    
+    try:
         query_db = Data.query.filter(Data.id==post_id)
         db.session.close()
     except:
@@ -41,7 +55,7 @@ def index():
     form1 = EnterDBInfo(request.form)
 
     if request.method == 'POST' and form1.validate():
-        data_entered = Data(notes=form1.dbNotes.data, 
+        data_entered = Data(notes=form1.dbNotes.data,
                 username=form1.dbUsername.data)
         try:
             db.session.add(data_entered)
