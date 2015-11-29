@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from application import db
 from application.models import Data
 from application.forms import EnterDBInfo, RetrieveDBInfo, LoginForm
-from flask.ext.login import LoginManager
+from flask_login import LoginManager
 
 # Elastic Beanstalk initalization
 application = Flask(__name__)
@@ -30,16 +30,16 @@ def login():
         # user should be an instance of your `User` class
         login_user(user)
 
-        flask.flash('Logged in successfully.')
+        flash('Logged in successfully.')
 
-        next = flask.request.args.get('next')
+        next = request.args.get('next')
         # next_is_valid should check if the user has valid
         # permission to access the `next` url
         if not next_is_valid(next):
-            return flask.abort(400)
+            return abort(400)
 
-        return flask.redirect(next or flask.url_for('index'))
-    return flask.render_template('login.html', form=form)
+        return redirect(next or flask.url_for('index'))
+    return render_template('login.html', form1=form)
 """
 @application.route('/login')
 def login():
