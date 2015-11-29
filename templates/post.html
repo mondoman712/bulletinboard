@@ -100,11 +100,9 @@ Home &#9662;
 
     <table class="table table-striped table-hover">
   <thead>
-{% for z in results %}
     <tr>
-      <td>{{z.notes}} -- posted by {{z.username}}</td>
+      <td>{{results.notes}} -- posted by {{results.username}}</td>
     </tr>
-{% endfor %}
   </tbody>
 </table>
 
