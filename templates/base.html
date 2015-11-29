@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="{{ url_for('static', filename='styleSheet.css') }}">
       <title>Bulletin Board</title>
 
-  
+
      <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 +    <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@ document.onclick = function(ht){
 </head>
 
 
-	
+
 <body>
 
  <div id="header">
@@ -60,7 +60,7 @@ Hottest
 Most Recent
 </div>
 
-<div id="subHeading3" class="subHeading" onclick="location.href='login.html';"  style="cursor: pointer;">
+<div id="subHeading3" class="subHeading" onclick="location.href='/login';"  style="cursor: pointer;">
 Log In
 </div>
 
@@ -83,4 +83,3 @@ Home &#9662;
 </div>
 	      {% endblock %}
     {% block content %} {% endblock %}
-
